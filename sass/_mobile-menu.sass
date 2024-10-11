@@ -1,0 +1,90 @@
+//Мобильное меню
+.header
+    background: #2A2A28
+    height: 50px
+    width: 100%  
+    display: none
+    @media (max-width: 1023px)
+        display: flex
+        justify-content: center
+.burger-menu-img
+    display: none
+    position: absolute
+    top: 19px
+    right: 15px
+    width: 28px
+    height: 20px
+    @media (max-width: 1023px)
+        display: block 
+.close
+    width: 20px
+    height: 20px
+    position: absolute   
+    top: 10px
+    right: 18px      
+.promo__logo-mobile
+    width: 106px
+    height: 40px
+    display: none
+    position: absolute
+    top: 9px
+    @media (max-width: 1023px)
+        display: block 
+.header-fixed 
+    position: fixed
+    top: 0
+    z-index: 10          
+.mobile__menu
+    display: block
+    transition: 1s all
+    left: -9999px
+    padding-top: 10px
+    position: fixed
+    top: 50px
+    width: 100%
+    height: 250px
+    background: #2A2A28
+    border-radius: 3px
+    z-index: 100
+    @media (max-width: 1023px) 
+        display: flex 
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    .menu
+        padding-bottom: 20px
+    .top
+        display: flex
+        justify-content: space-between    
+        .mobile__left__block, .mobile__right__block
+            margin-right: 40px    
+    .mobile__list
+        margin-top: 16px
+    .text, .mobile__text 
+        width: 100px
+        font-family: $font-family
+        text-align: center
+        font-size: 16px  
+        color: $text-color
+    .mobile__left__block
+        display: flex    
+        &::before
+            display: inline-block
+            padding-left: 10px
+            padding-right: 5px
+            content: url(../img/icons/geopositions.svg)
+    .mobile__link   
+        margin-top: 9px 
+        font-size: 18px
+        line-height: 20px
+        font-family: $font-family-text        
+        color: $text-color
+        text-transform: uppercase
+        &:hover
+            color: $btn-color
+.active
+    top: 50px
+    left: 0
+    transition: 1s all     
+
+    

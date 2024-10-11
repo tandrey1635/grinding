@@ -1,0 +1,656 @@
+.services
+    position: relative
+    padding-bottom: 91px
+    min-height: 2000px
+    background: url(../img/main-bg.jpg)no-repeat
+    background-size: cover
+    @media (max-width: 425px)
+        padding-bottom: 30px
+    &__header
+        @media (max-width: 1300px)
+            padding-top: 12px    
+    &__top, &__bottom
+        display: flex
+        justify-content: space-between
+        padding-top: 30px
+    &__top
+        @media (max-width: 1300px) 
+            flex-wrap: wrap 
+            justify-content: space-around
+            padding-top: 15px
+    &__top-price
+        position: absolute 
+        top: 83px
+        display: flex  
+        justify-content: space-between
+        z-index: 10
+    .top__price-close 
+        position: absolute
+        top: 5px
+        right: 10px
+        width: 20px
+        height: 20px
+        cursor: pointer 
+        @media (max-width: 425px)  
+            width: 15px
+            height: 15px 
+    &__bottom
+        position: relative
+        padding-top: 32px
+        justify-content: center 
+        align-items: center
+        @media (max-width: 1300px)
+            padding-top: 10px
+    &__top__img  
+        width: 300px
+        height: 320px
+        margin-top: 10px
+        position: relative   
+        @media (max-width: 1300px)
+            width: 48%
+            height: 500px
+        @media (max-width: 1023px)  
+            height: 350px  
+        @media (max-width: 767px) 
+            height: 250px   
+        @media (max-width: 425px) 
+            height: 190px
+    .blur
+        filter: blur(20px)       
+    &__top__img-price 
+        position: absolute
+        left: 0
+        min-height: 324px
+        width: 300px 
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52))
+        border-radius: 3px
+        display: none
+        @media( max-width: 1023px)
+            min-height: 200px
+        @media( max-width: 425px)
+            min-height: 190px    
+        &:not(:last-child)
+            margin-right: 30px 
+    .active-1
+        position: absolute
+        display: flex
+        flex-direction: column
+        @media( max-width: 1300px)
+            width: 460px
+            height: 495px
+            top: -3px
+            left: 10px
+        @media( max-width: 1023px)
+            width: 336px
+            height: 362px
+            left: 7px
+        @media( max-width: 767px) 
+            width: 200px
+            height: 250px  
+            left: 4px 
+        @media( max-width: 425px)
+            width: 163px
+            height: 190px
+            top: -17px 
+            left: 3px    
+    .active-2
+        position: absolute
+        display: flex
+        flex-direction: column  
+        left: 330px
+        @media( max-width: 1300px)
+            width: 460px
+            height: 495px
+            top: -3px
+            position: absolute
+            left: 490px 
+        @media( max-width: 1023px)
+            width: 336px
+            height: 362px 
+            left: 357px 
+        @media( max-width: 767px) 
+            width: 200px
+            height: 250px  
+            left: 214px 
+        @media( max-width: 425px)
+            width: 163px
+            height: 190px
+            top: -17px 
+            left: 173px           
+    .active-3
+        position: absolute
+        display: flex
+        flex-direction: column  
+        left: 660px
+        @media( max-width: 1300px)
+            width: 460px
+            height: 495px
+            top: 503px
+            position: absolute
+            left: 10px 
+        @media( max-width: 1023px)
+            width: 336px
+            height: 362px 
+            top: 370px
+        @media( max-width: 767px) 
+            width: 200px
+            height: 250px 
+            top: 255px 
+            left: 4px
+        @media( max-width: 425px)
+            width: 163px
+            height: 190px  
+            top: 183px        
+    .active-4
+        position: absolute
+        display: flex
+        flex-direction: column  
+        left: 990px  
+        @media( max-width: 1300px)
+            width: 460px
+            height: 495px
+            top: 503px
+            position: absolute
+            left: 490px    
+        @media( max-width: 1023px)
+            top: 370px
+            width: 336px
+            height: 362px 
+            left: 357px 
+        @media( max-width: 767px) 
+            width: 200px
+            height: 250px 
+            top: 255px 
+            left: 214px 
+        @media( max-width: 425px)
+            width: 160px
+            height: 190px 
+            top: 183px
+            left: 173px                  
+    &__header-price  
+        text-align: center
+        font-family: $font-family-text
+        margin-top: 25px 
+        @media( max-width: 767px)
+            font-size: 16px
+            margin-top: 10px
+        @media( max-width: 425px) 
+            font-size: 14px   
+    .menu__price
+        flex-grow: 1
+        margin-left: 22px
+        margin-top: 15px 
+        @media( max-width: 767px) 
+            margin-top: 5px  
+    .price__list
+        font-family: $font-family  
+        color: $text-color
+        font-size: 20px
+        line-height: 131.5% 
+        @media( max-width: 767px)
+            font-size: 14px
+        @media( max-width: 425px) 
+            font-size: 12px     
+    .price__btn
+        font-family: $font-family
+        padding: 19px
+        display: flex
+        justify-content: center
+        @media( max-width: 767px) 
+            font-size: 16px
+        @media( max-width: 425px)
+            padding: 10px 
+    &__bottom__parent
+        margin: 0 auto
+        width: 630px
+        position: relative
+        @media( max-width: 1300px)
+            width: 100%
+    &__bottom-price
+        display: none
+        position: absolute
+        top: 30px
+        left: 0
+        width: 630px
+        margin: 0 auto
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+        border-radius: 3px
+        @media( max-width: 1300px)
+            width: 100%
+            top: 10px     
+    .active-bottom
+        display: block
+        text-align: center
+        padding-top: 5px
+        @media( max-width: 767px)
+            height: 250px
+        @media( max-width: 425px) 
+            height: 210px     
+    .blur-bottom
+        filter: blur(10px)
+        .discount
+            display: none
+        .services__header
+            padding-top: 20px
+            text-align: center
+    &__bottom-close 
+        position: absolute
+        right: 10px
+        top: 10px
+        cursor: pointer
+        width: 20px
+        height: 20px  
+        @media( max-width: 767px) 
+            width: 15px
+            height: 15px
+        @media( max-width: 425px)   
+            top: 4px 
+    &__border-price
+        display: inline-block
+        margin-top: 0
+        margin: 0 auto
+        border-bottom: 1px solid $btn-color 
+        @media( max-width: 767px)  
+            font-size: 16px
+        @media( max-width: 425px) 
+            font-size: 14px     
+    .block__bottom__descr-price
+        display: flex
+        justify-content: space-around
+        @media( max-width: 425px)
+            flex-wrap: wrap
+    .bottom__descr__price
+        margin-top: 6px  
+        margin-bottom: 20px 
+        @media( max-width: 425px) 
+            margin-bottom: 10px
+    .bottom__descr__price, .descr__price__list
+        font-size: 16px
+        color: $text-color
+        font-family: $font-family
+        @media( max-width: 767px)
+            font-size: 14px  
+    .descr__price__list
+        line-height: 158.5% 
+        @media( max-width: 425px) 
+            font-size: 14px    
+    &__bottom__img
+        width: 630px
+        height: 192px
+        position: relative  
+        @media (max-width: 1300px) 
+            width: 100%
+            height: 300px  
+        @media (max-width: 767px) 
+            height: 250px  
+        @media (max-width: 425px)   
+            height: 210px      
+    .block__img  
+        width: 520px 
+        height: 256px
+        @media (max-width: 767px) 
+            width: 200px
+            height: 48% 
+        @media (max-width: 425px)
+            width: 160px          
+    &__photo
+        filter: brightness(0.8)
+        width: 100%
+        height: 100%
+        &_top-left  
+            position: absolute  
+            top: 0
+            left: 0
+    .discount
+        width: 10%
+        height: 62px    
+    &__descr 
+        width: 190px
+        position: absolute
+        bottom: 25px
+        left: 25px 
+        @media (max-width: 767px) 
+            left: 10px
+        @media (max-width: 425px) 
+            width: 128px 
+            bottom: 15px
+    &__bottom__descr  
+        position: absolute       
+    &__border  
+        margin-top: 10px
+        width: 80px    
+        &_blue
+            border: 1px solid #5F5FFC
+            border-radius: 3px
+        &_green
+            border: 1px solid #24A60F
+        &_red
+            border: 1px solid #A60A0A
+        &_gray 
+            border: 1px solid #fff
+        &_yellow  
+            width: 150px
+            border: 1px solid #FFD700  
+    &__link
+        font-size: 20px
+        line-height: 131.5%
+        color: $text-color
+        @media (max-width: 425px) 
+            font-size: 15px      
+        &::after
+            content: url(../img/icons/low-arrow.svg)
+            margin-left: 10px
+    //Блок с календарем        
+    &__online
+        margin-top: 66px
+    &__header__online 
+        text-align: center
+    &__block__online
+        padding: 60px 10px
+        display: flex
+        justify-content: space-around
+        min-height: 514px
+        margin-top: 26px
+        border: 3px solid #FFFFFF
+        border-radius: 3px
+        @media (max-width: 1300px) 
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between 
+    .online__block
+        width: 300px        
+    .online__block__header
+        line-height: 131.5%
+        color: $text-color
+        font-family: $font-family 
+        @media (max-width: 1300px)
+            margin-top: 20px
+            margin-bottom: 10px
+            text-align: center  
+        
+    input[type="checkbox"]:checked, 
+    input[type="checkbox"]:not(:checked)
+        position: absolute
+        left: -9999px
+
+    input[type="checkbox"]:checked + label, 
+    input[type="checkbox"]:not(:checked) + label 
+        display: flex
+        align-items: center
+        position: relative
+        padding-left: 44px
+        cursor: pointer
+   
+    input[type="checkbox"]:checked + label:before, 
+    input[type="checkbox"]:not(:checked) + label:before
+        content: ""
+        position: absolute
+        left: 0px
+        top: 0px
+        width: 27px
+        height: 27px
+        border: 2px solid #FFFFFF
+        cursor: pointer
+
+    input[type="checkbox"]:checked + label:before, 
+    input[type="checkbox"]:not(:checked) + label:before
+        border-radius: 2px
+    
+    input[type="checkbox"]:checked + label:after, 
+    input[type="checkbox"]:not(:checked) + label:after
+        content: url(../img/icons/ok.svg)
+        position: absolute
+        left: 10px
+        top: 2px
+        -webkit-transition: all 0.2s ease
+        -moz-transition: all 0.2s ease
+        -o-transition: all 0.2s ease
+        transition: all 0.2s ease
+    input[type="checkbox"]:not(:checked) + label:after 
+        opacity: 0
+
+    .online__label
+        display: flex
+        align-items: center
+        margin-top: 16px
+        font-weight: 600
+        font-size: 22px
+        line-height: 131.5%
+        text-transform: uppercase
+        color: $text-color
+        font-family: $font-family-text
+        cursor: pointer  
+    .online__label-text
+        font-size: 24px
+        line-height: 131.5%
+        display: flex
+        align-items: center
+        color: $text-color
+        font-family: $font-family
+        margin-top: 20px
+        margin-bottom: 4px
+    .input__text
+        color: $text-color
+        padding: 0 10px
+        border: none
+        outline: none
+        border-bottom: 1px solid #FFFFFF
+        background: transparent
+        @media (max-width: 1300px) 
+            width: 100%
+    .online__text
+        display: flex
+        margin-top: 31px
+        width: 290px
+        font-size: 17px
+        line-height: 127.7%
+        color: #BABABA
+        font-family: $font-family
+        &:before
+            margin-right: 6px
+            content: url(../img/icons/ok.svg)
+    .block__date
+       margin-top: 25px
+    .air-datepicker
+        background: #323230 
+        font-weight: 900  
+        font-size: 1rem 
+        color: #FFD700
+        --adp-background-color-hover: #000
+        --adp-background-color-active: crimson
+        @media (max-width: 1300px) 
+            margin: 0 auto
+    .air-datepicker-cell.-selected- 
+        background: #00adf5
+    .air-datepicker-button:hover
+        background: #00adf5
+        color: #fff
+    .air-datepicker-cell.-current-.-focus-
+        color: #fff  
+    .air-datepicker-button span  
+        font-weight: 900 
+        font-size: .9rem
+    .air-datepicker-body--day-name
+        color: #40d140
+    .-weekend-
+        color: crimson
+    .-current- , .air-datepicker-nav--title i
+        color: deepskyblue
+    .air-datepicker-nav--action path
+        fill: #fff
+        stroke: #fff  
+    .time
+        margin-top: 80px
+    .online__info
+        font-size: 19px
+        line-height: 131.5%
+        color: $text-color
+        font-family: $font-family 
+        margin-top: 19px
+        @media( max-width: 1300px)
+            text-align: center   
+        &_fs20
+            margin-top: 5px
+            width: 301px
+            text-align: center
+            font-size: 20px
+            line-height: 160%
+            color: #FFFFFF
+    .online__info__tel
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 6px
+        font-size: 18px
+        line-height: 20px
+        text-transform: uppercase
+        color: $text-color
+        font-family: $font-family-text
+        &-svg
+            width: 20px
+            margin-right: 6px
+            fill: #fff
+    .online__info__tel:hover  .online__info__tel-svg, .online__info__tel:hover
+        fill: #FFD700   
+        color: #FFD700 
+    .online__btn
+        text-align: center
+        padding: 20px
+        margin-top: 24px
+    &__reviews 
+        margin-top: 91px
+        @media (max-width: 1300px) 
+            margin-top: 26px
+    &__block__info  
+        display: flex
+        align-items: center  
+        @media (max-width: 1300px) 
+            flex-direction: column
+            align-items: flex-start 
+    &__info__text
+        width: 740px
+        margin-top: 31px 
+        @media (max-width: 1023px)
+            width: 100% 
+            @media (max-width: 425px) 
+                font-size: 16px
+    &__info__btn
+        margin-left: 30px
+        padding: 3px 0
+        width: 258px
+        display: flex
+        justify-content: space-around
+        align-items: center 
+        @media (max-width: 1300px) 
+            margin-top: 15px
+            align-self: center          
+    &__contacts 
+        margin-top: 85px 
+        @media (max-width: 1300px)
+            margin-top: 26px
+    .block__contacts
+        display: flex
+        justify-content: space-between  
+        img
+            height: 100%  
+    &__menu
+        width: 55%
+        @media (max-width: 1300px) 
+            width: 45%             
+    &__list
+        display: flex
+        align-items: center
+        font-size: 30px
+        line-height: 33px
+        font-family: $font-family-text
+        color: $text-color
+        margin-top: 31px
+        @media (max-width: 1300px) 
+            display: none
+        &_adress
+            @media (max-width: 1300px) 
+                align-items: flex-start
+                flex-direction: column
+                display: none 
+        &-mobile 
+            display: none
+            @media (max-width: 1300px)  
+                display: flex  
+            @media (max-width: 767px) 
+                font-size: 25px
+            @media (max-width: 425px)
+                font-size: 20px
+                line-height: 22px        
+        &-social-icons
+            justify-content: space-between
+            align-items: center
+            @media (max-width: 1023px)
+                width: 65%
+            @media (max-width: 767px) 
+                width: 100%      
+            a
+                height: 32px
+            a:first-child
+                margin-left: 22px
+                @media (max-width: 425px)
+                    margin-left: 11px
+            a:not(:last-child)  
+                margin-right: 28px 
+                @media (max-width: 425px)
+                    margin-right: 13px  
+    .svg
+        fill: #fff
+        &_yellow
+            fill: #FFD700  
+        &:hover
+            fill: #FFD700
+        &:active  
+            fill: #BD9F00  
+        &_yellow:hover
+            fill:#000 
+        &_yellow:active           
+            fill:#BD9F00   
+    .svg_mobile   
+        fill: #FFD700      
+    .svg_mobile:active           
+        fill:#BD9F00 
+
+    &__info-mobile
+        @media (max-width: 425px)
+            font-size: 20px
+            line-height: 22px
+    &__link-info, &__adress-info
+        font-family: $font-family
+        font-size: 20px
+        line-height: 24px
+        text-transform: uppercase
+        color: $text-color 
+    &__link-info
+        margin-left: 20px
+        &:hover
+            color: $btn-color
+        @media (max-width: 425px) 
+            margin-left: 10px
+            font-size: 16px
+            line-height: 19px
+    &__adress-info
+        display: flex   
+        align-items: center 
+        @media (max-width: 1300px)
+            margin-top: 10px  
+        @media (max-width: 425px) 
+            font-size: 15px   
+            line-height: 133%    
+    &__adress-info::before
+        margin-left: 20px
+        margin-right: 15px
+        content: url(../img/icons/geopositions.svg)
+        @media (max-width: 1300px)
+            content: none
+    .footer__bottom
+        display: none
+        @media (max-width: 1300px)
+            display: flex
+
+        

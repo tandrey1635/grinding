@@ -1,0 +1,146 @@
+.promo
+    display: flex
+    justify-content: center
+    position: relative
+    min-height: 1042px
+    box-shadow: inset 0px 1042px 4px rgba(0, 0, 0, 0.25)
+    filter: brightness(0.8)
+    @media (max-width: 767px) 
+        min-height: 640px
+    @media (max-width: 480px) 
+        background: url(../img/main-bg-mobile.png) no-repeat
+        background-size: cover  
+    &__sidebar
+        top: 40%
+        left: 10%
+        position: absolute
+        transform: translateY(-50%)
+        z-index: 12
+        @media (max-width: 1023px)  
+           left: 1%
+        @media (max-width: 767px) 
+            left: 0    
+        @media (max-width: 425px) 
+            top: 100px
+            left: 15px      
+        a
+            padding: 10px
+            border-bottom: 1px solid #FFD700
+            border-radius: 100%
+            display: flex 
+        svg
+            fill: #fff
+            &:hover
+                fill: #FFD700
+        a:not(first-child)
+            margin-top: 15px
+            @media (max-width: 425px) 
+                margin-top: 10px           
+    &__nav
+        position: absolute
+        top: 72px
+        display: flex
+        align-items: center
+        z-index: 10
+        @media (max-width: 1300px)
+            top: 50px
+        @media (max-width: 1023px) 
+            display: none      
+    &__menu  
+        display: flex 
+        align-items: center 
+        margin-left: 50px
+        justify-content: space-between
+        @media (max-width: 1300px)
+            margin-left: 30px
+    &__descr
+        text-align: center
+        width: 860px
+        position: absolute
+        top: 40%
+        @media (max-width: 1023px) 
+            width: 100%
+        @media (max-width: 767px) 
+            width: 330px  
+            margin: 0 auto 
+        @media (max-width: 767px) 
+            top: 35%  
+        @media (max-width: 425px) 
+            top: 206px      
+    &__video
+        display: flex
+        width: 100%
+        min-height: 100%
+        object-fit: cover
+        @media (max-width: 480px) 
+            display: none
+    &__text
+        width: 656px
+        text-align: center
+        margin: 8px auto 0
+        @media (max-width: 767px) 
+            width: 330px        
+    .promo__text        
+        @media (max-width: 425px) 
+            font-size: 18px 
+    &__block__btn
+        display: flex
+        justify-content: center
+        margin-top: 23px
+    &__btn
+        backdrop-filter: blur(15px)
+        padding: 10px 28px
+        
+    &__list, &__link
+        display: flex
+        align-items: center 
+        &-column ,&-column_normal     
+            flex-direction: column
+            align-items: flex-end
+            margin-top: 10px    
+        &-column_normal 
+            align-items: center
+            margin-top: 0 
+    &__list:not(:last-child)
+        margin-right: 50px
+        @media (max-width: 1300px)
+            margin-right: 7px
+    &__list, &__link, &__text-info
+        font-family: $font-family-text
+        font-size: 18px
+        line-height: 22px
+        text-transform: uppercase
+        color: $text-color 
+        @media (max-width: 1300px)
+            font-size: 18px
+    &__link:hover
+        color: $btn-color
+    &__text-info  
+        display: flex 
+        margin-top: 22px
+        @media (max-width: 1300px)
+            align-items: center
+            margin-top: 12px
+    &__link-column
+        margin-top: 3px
+        @media (max-width: 1300px)
+            margin: 0        
+    &__text-info:before
+        margin-right: 15px
+        content: url(../img/icons/geopositions.svg)
+    .clock
+        margin-top: -18px
+        width: 32px
+        height: 32px
+        margin-bottom: 12px 
+        @media (max-width: 1300px)
+            margin-top: -11px
+    .mt5
+        margin-bottom: 7px 
+    .logo__link
+        display: flex  
+        width: 106px
+        height: 35px      
+        
+
+  
