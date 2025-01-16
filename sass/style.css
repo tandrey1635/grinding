@@ -308,6 +308,7 @@
   .about {
     padding-top: 36px;
     padding-bottom: 12px;
+    min-height: 600px;
   }
 }
 .about__top, .about__bottom {
